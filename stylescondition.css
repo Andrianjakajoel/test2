@@ -114,3 +114,66 @@ footer {
 .contacts a:hover {
     color: #ffdd57;
 }
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .logo h1 {
+        font-size: 20px;
+    }
+
+    #terms {
+        padding: 40px 10px; /* Less padding for smaller screens */
+        margin: 30px auto; /* Less margin */
+    }
+
+    h2 {
+        font-size: 28px; /* Smaller font size */
+    }
+
+    h3 {
+        font-size: 24px; /* Smaller font size */
+    }
+
+    p {
+        font-size: 14px; /* Smaller font size */
+    }
+
+    .back-btn {
+        font-size: 14px; /* Smaller button font */
+        padding: 8px 15px; /* Smaller padding */
+    }
+
+    .contacts {
+        flex-direction: column; /* Stack contacts vertically */
+        gap: 15px; /* Smaller gap */
+    }
+}
+
+@media (max-width: 480px) {
+    #terms {
+        padding: 30px 5px; /* Further reduce padding */
+    }
+
+    h2 {
+        font-size: 24px; /* Even smaller font size */
+    }
+
+    h3 {
+        font-size: 20px; /* Even smaller font size */
+    }
+
+    p {
+        font-size: 12px; /* Smaller paragraph font size */
+    }
+
+    .back-btn {
+        font-size: 12px; /* Smallest button font */
+        padding: 6px 10px; /* Smallest button padding */
+    }
+}
