@@ -1,0 +1,150 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background: url('img/background.webp') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+}
+
+/* Wrapper to ensure footer sticks to the bottom */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* Pushes the footer down */
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    color: #ffdd57;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.connect-btn {
+    background-color: #ff6f61;
+    color: white;
+}
+
+.signup-btn {
+    background-color: #57a0ff;
+    color: white;
+}
+
+.connect-btn:hover {
+    background-color: #e85c50;
+}
+
+.signup-btn:hover {
+    background-color: #4789e1;
+}
+
+/* Main Content */
+.main-content {
+    text-align: center;
+    padding: 80px 20px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent */
+    border-radius: 10px;
+    margin: 50px auto;
+    max-width: 900px;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ffdd57;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #f1f1f1;
+}
+
+.play-btn {
+    background-color: #ffdd57;
+    color: #333;
+    padding: 15px 30px;
+    font-size: 18px;
+}
+
+.play-btn:hover {
+    background-color: #e6c54b;
+}
+
+/* Footer */
+.footer {
+    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent */
+    text-align: center;
+    color: #ffffff;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.contact-info {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 16px;
+}
+
+.contact-info a {
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: #ffdd57;
+}
+
+.contact-info i {
+    font-size: 18px;
+}
